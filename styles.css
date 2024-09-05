@@ -107,6 +107,9 @@ div.scroll-container img {
 }
 .center-text {
     text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    line-height: 30px
 }
 .shadow {
     text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
@@ -115,13 +118,15 @@ div.scroll-container img {
     background-color: rgb(230, 124, 11);
 }
 figcaption {
-    width: 200px; /* Match the width of the image */
-    text-align: center; /* Optional: to center the text within the caption */
-    font-size: 14px; /* Optional: adjust the font size as needed */
-    margin-top: 5px; /* Optional: space between image and caption */
+    width: 200px;
+    text-align: center; 
+    font-size: 14px; 
+    margin-top: 5px; 
 }
-.inline-block {
-    display: inline-block;
-    margin: 0 10px; /* Optional: horizontal spacing between images */
-    text-align: center; /* Center caption under image */
+.center-image {
+    display: flex;
+    justify-content: center;
+    margin: 0 10px; 
+    text-align: center;
+    align-items: center;
 }
