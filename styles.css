@@ -1,0 +1,127 @@
+body {
+    font-family: monaco, sans-serif;
+    margin: 0;
+    padding: 0;
+    color:#4e2f04;
+    background-color: #f7e5cb;
+}
+header {
+    background-image: url('/images/ncskyline.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px;
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em;
+}
+nav {
+    margin: 1em 0;
+}
+nav a {
+    margin: 0 1em;
+    text-decoration: none;
+    color: #f7f2f2;
+    cursor: pointer;
+}
+.nav-link:hover {
+    background-color: rgba(246, 250, 251, 0.061);
+    color: black; /* Optional: change text color on hover for better visibility */
+}
+section {
+    padding: 2em;
+    display: none;
+}
+section.active{
+    display: block;
+}
+.footer{
+    color: white;
+    padding: 50px;
+    background-color: #032e12;
+    background-size: cover;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+.image-container {
+    width:400px;
+    height:400px;
+    border-radius: 50%;/* Set the width of the container */
+    overflow: hidden; /* Hide any overflowed parts of the image */
+    display: flex; /* Use flexbox to center the image */
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    border: 2px solid #ccc; /* Optional: add a border */
+    margin: 0 auto;
+    box-sizing: border-box; /* Center the container horizontally */
+}
+
+.image-container img {
+    max-width: 100%; /* Ensure image fits within its container */
+    height: auto; /* Maintain aspect ratio */
+}
+div.scroll-container {
+    background-color: rgba(1, 1, 1, 0.094);
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+    display: flex; /* Use flexbox */
+    align-items: center;
+}
+
+div.scroll-container img {
+    padding: 10px;
+    display: inline-block;
+    max-height: 300px; 
+    height: auto;
+    vertical-align: middle;
+}
+.center-text {
+    text-align: center;
+}
+.shadow {
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+.highlight {
+    background-color: rgb(230, 124, 11);
+}
+figcaption {
+    width: 200px; /* Match the width of the image */
+    text-align: center; /* Optional: to center the text within the caption */
+    font-size: 14px; /* Optional: adjust the font size as needed */
+    margin-top: 5px; /* Optional: space between image and caption */
+}
+.inline-block {
+    display: inline-block;
+    margin: 0 10px; /* Optional: horizontal spacing between images */
+    text-align: center; /* Center caption under image */
+}
