@@ -1,6 +1,4 @@
 # taylornlane.github.io
-[Link to website](taylornlane.github.io)
-
 This is a personal website built from scratch using HTML, CSS, and JavaScript. The site showcases my work, skills, and projects, and provides an easy way for visitors to contact me or learn more about my background. The design focuses on simplicity, responsiveness, and user-friendly navigation.
 
 Features
