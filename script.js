@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     navLinks.forEach(link => {
         link.addEventListener('click', function(event) {
-            event.preventDefault(); // Prevent the default anchor behavior
+            event.preventDefault(); 
             const targetId = this.getAttribute('data-target');
             
             sections.forEach(section => {
@@ -15,8 +15,6 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     });
-
-    // Ensure the home section is displayed initially
     document.getElementById('home').classList.add('active');
 });
 
