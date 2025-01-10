@@ -29,7 +29,7 @@ nav a {
 }
 .nav-link:hover {
     background-color: rgba(246, 250, 251, 0.061);
-    color: black; /* Optional: change text color on hover for better visibility */
+    color: black; 
 }
 section {
     padding: 2em;
@@ -75,26 +75,26 @@ section.active{
 .image-container {
     width:400px;
     height:400px;
-    border-radius: 50%;/* Set the width of the container */
-    overflow: hidden; /* Hide any overflowed parts of the image */
-    display: flex; /* Use flexbox to center the image */
-    justify-content: center; /* Center the image horizontally */
-    align-items: center; /* Center the image vertically */
-    border: 2px solid #ccc; /* Optional: add a border */
+    border-radius: 50%;
+    overflow: hidden; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    border: 2px solid #ccc; 
     margin: 0 auto;
-    box-sizing: border-box; /* Center the container horizontally */
+    box-sizing: border-box; 
 }
 
 .image-container img {
-    max-width: 100%; /* Ensure image fits within its container */
-    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; 
+    height: auto; 
 }
 div.scroll-container {
     background-color: rgba(1, 1, 1, 0.094);
     overflow: auto;
     white-space: nowrap;
     padding: 10px;
-    display: flex; /* Use flexbox */
+    display: flex; 
     align-items: center;
 }
 
