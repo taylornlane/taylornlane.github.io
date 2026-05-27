@@ -1,0 +1,27 @@
+@use 'variables' as *;
+
+.about {
+  padding: $space-section 0;
+  background-color: $color-bg;
+
+  @media (max-width: $bp-md) {
+    padding: 72px 0;
+  }
+
+  &__inner {
+    max-width: 760px;
+  }
+
+  &__body {
+    p {
+      font-size: 1.0625rem;
+      line-height: 1.8;
+      color: $color-text;
+      margin-bottom: $space-md;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

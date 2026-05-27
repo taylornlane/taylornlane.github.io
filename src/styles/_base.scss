@@ -1,0 +1,148 @@
+@use 'variables' as *;
+
+body {
+  font-family: $font-body;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: $color-text;
+  background-color: $color-bg;
+}
+
+// ─── Shared layout ────────────────────────────────────────────────────────────
+.container {
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 0 $space-lg;
+
+  @media (max-width: $bp-md) {
+    padding: 0 $space-md;
+  }
+
+  @media (max-width: $bp-sm) {
+    padding: 0 $space-sm;
+  }
+}
+
+// ─── Section chrome ───────────────────────────────────────────────────────────
+.section-label {
+  display: block;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: $color-text-secondary;
+  margin-bottom: $space-md;
+}
+
+.section-heading {
+  font-family: $font-heading;
+  font-size: clamp(2.25rem, 5vw, 3rem);
+  font-weight: 300;
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+  color: $color-text;
+  margin-bottom: $space-sm;
+}
+
+.section-tagline {
+  font-size: clamp(1rem, 2vw, 1.1875rem);
+  line-height: 1.6;
+  color: $color-text-secondary;
+  max-width: 640px;
+  margin-bottom: $space-lg;
+}
+
+// ─── Shared components ────────────────────────────────────────────────────────
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $space-xs;
+  margin-bottom: $space-lg;
+
+  li {
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    color: $color-accent;
+    background: rgba($color-accent, 0.08);
+    border: 1px solid rgba($color-accent, 0.15);
+    border-radius: 4px;
+    padding: 4px 10px;
+  }
+}
+
+.btn-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $space-xs;
+  align-items: center;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1;
+  transition: background-color 0.18s, border-color 0.18s, color 0.18s, transform 0.1s;
+  cursor: pointer;
+  white-space: nowrap;
+
+  &:hover {
+    transform: translateY(-1px);
+  }
+
+  &--primary {
+    background-color: $color-accent;
+    color: $color-white;
+    border: 1px solid $color-accent;
+
+    &:hover {
+      background-color: $color-accent-hover;
+      border-color: $color-accent-hover;
+    }
+  }
+
+  &--secondary {
+    background-color: transparent;
+    color: $color-accent;
+    border: 1px solid rgba($color-accent, 0.35);
+
+    &:hover {
+      background-color: rgba($color-accent, 0.05);
+      border-color: $color-accent;
+    }
+  }
+
+  &--ghost {
+    background-color: transparent;
+    color: $color-text-secondary;
+    border: 1px solid $color-border;
+
+    &:hover {
+      color: $color-text;
+      border-color: rgba($color-text, 0.3);
+    }
+  }
+}
+
+// ─── Phone frame ──────────────────────────────────────────────────────────────
+.phone-frame {
+  border-radius: 32px;
+  border: 6px solid #1a1a1a;
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.06) inset,
+    0 24px 64px rgba(0, 0, 0, 0.16);
+  overflow: hidden;
+  background: #1a1a1a;
+  flex-shrink: 0;
+
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}

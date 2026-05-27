@@ -1,157 +1,356 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Taylor Lane</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Taylor Lane — CS senior at the University of Michigan. Founder of Spivvy. I build products people actually use." />
+  <title>Taylor Lane</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,200..900;1,9..144,200..900&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <header>
-        <h1 class="shadow">Taylor Lane</h1>
-    
-    <nav class="shadow">
-        <a data-target="home" class="nav-link">Home</a>
-        <a data-target="about" class="nav-link">About</a>
-        <a data-target="projectSpotlight" class="nav-link">Project Spotlight</a>
-        <div class="dropdown">
-            <a class="dropbtn">Hobbies</a>
-            <div class="dropdown-content">
-                <a data-target="reading" class="nav-link">Reading</a>
-                <a data-target="fashion" class="nav-link">Fashion</a>
-                <a data-target="photography" class="nav-link">Photography</a>
-            </div>
+
+  <!-- ═══════════════════════════════ HERO ═══════════════════════════════════ -->
+  <section id="hero" class="hero">
+    <div class="container">
+      <div class="hero__inner">
+
+        <div class="hero__content">
+          <h1 class="hero__name">Taylor Lane</h1>
+          <p class="hero__pitch">
+            Recent CS grad at the University of Michigan. Founder of Spivvy.
+          </p>
+
+          <nav class="hero__links" aria-label="Quick links">
+            <a href="https://spivvy.app" class="hero__link" target="_blank" rel="noopener noreferrer">
+              <!-- external-link icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              Spivvy
+            </a>
+            <a href="https://github.com/taylornlane" class="hero__link" target="_blank" rel="noopener noreferrer">
+              <!-- github icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/taynlane" class="hero__link" target="_blank" rel="noopener noreferrer">
+              <!-- linkedin icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              LinkedIn
+            </a>
+            <a href="mailto:taynlane@gmail.com" class="hero__link">
+              <!-- mail icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              Email
+            </a>
+            <!-- TODO: add your resume PDF to the repo root and update this href -->
+            <a href="assets/resume.docx" class="hero__link" target="_blank" rel="noopener noreferrer">
+              <!-- file icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+              Resume
+            </a>
+          </nav>
         </div>
-    </nav>
-    </header>
-    <section id="home" class = "active">
-        <h2 class= "center-text">Hi, I'm Taylor!</h2>
-        <p></p>
-        <h4 class="center-text">Computer Science and Data Science Student</h4>
-        <p></p>
-        <div class="image-container">
-            <img src="images/headshot.jpg" alt="headshot"”>
+
+        <div class="hero__photo-wrap">
+          <img
+            src="assets/profile-picture.jpg"
+            alt="Taylor Lane"
+            class="hero__photo"
+            loading="eager"
+            width="320"
+            height="400"
+          />
         </div>
-        <p></p>
-        <p class="center-text"><b>Want to contact me?</b><dl class = "center-text">
-            <p></p>
-            <dt><i class="fas fa-envelope"></i> taynlane@gmail.com</dd>
-            <dt><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/taynlane">LinkedIn</a></dd></dt>
-            <dt><i class="fab fa-github"></i> <a href="https://github.com/taylornlane">GitHub</a></dt>
-            <dt><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/taylor_lane5">Instagram</a></dt>
-            <dt><a href = "../TaylorLaneResume1.pdf"> Resume </a></dt>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════ SPIVVY ══════════════════════════════════ -->
+  <section id="spivvy" class="spivvy">
+    <div class="container">
+
+      <div class="spivvy__header" data-animate>
+        <span class="section-label">Featured Project</span>
+        <h2 class="section-heading">Spivvy</h2>
+        <p class="section-tagline">
+          A peer-to-peer marketplace for college students to buy, sell, and rent
+          Live on iOS and Android.
         </p>
-    </section>
-    <section id="about" class = "center-text">
-        <h1>About</h1>
-        <p>Hi, I'm Taylor! I was born and raised in Grand Rapids, MI before moving to Ann Arbor for school. 
-            I'm currently looking for an internship in the software engineering or data analysis fields. 
-            In the future, I'd like to continue to explore machine learning and AI development.</p>
-        <h3>Education</h3>
-        <h4><i>College</i></h4>
-        <p>I am currently a student at the University of Michigan in Ann Arbor, MI pursuing a double major in Computer Science and Data Science. 
-            As an incoming junior, my graduation is set to May 2026. Last semester, I studied abroad in Madrid, Spain! I'm involved in many clubs at my university. I'm a very proud member of the 
-            <a href = "https://mdst.club">Michigan Data Science Team</a>, where I've helped creat an AI wordle bot and done some analysis with Spotify data. I'd love to tell you about it! I'm also the VP of External for the Michigan chapter of
-            <a href = "https://www.remandcompany.com">REM and Company</a>, which is a social impact consulting company offering pro-bono services to small,local businesses that are minority or female owned. 
-            I've worked with various clients and presented deliverables including KPI charts, social media guides, pricing suggestions, and website mock-ups. </p>
-            <p>You'll typically see me around campus at one of those clubs or at one of my campus jobs. I can be spotted leading tours through the college of engineering and coordinating student programming for the Center for Campus Involvement!</p>
-            <h3>...and I like to have fun with friends and cheer at football games!</h3>
-            <div class="scroll-container">
-            <img src="images/fballgame.jpg" alt="My friends and me at a Michigan Football Game." width="400" height=" 300">
-            <img src="images/picnicindiag.jpg" alt="Picnic in the diag"width="400" height=" 300">
-            <img src="images/fballgame2.jpg" alt="My highschool best friend and I dressed up for a game."width="400" height=" 300">
-            <img src="images/rempic.JPG" alt="Rem and Co end of year reception."width="400" height=" 300">
-            <img src="images/fountainfriends.jpg" alt="Walking through the fountain with friends my freshmen year."width="400" height=" 300">
-            <img src="images/fballgame3.jpg" alt="Watching a football game."width="400" height=" 300">
-            <img src="images/ninaarb.jpg" alt="Walking through the Arb with my roommate."width="400" height=" 300">
-        </div>
-        <h4><i>High School</i></h4>
-        <p>I graduated from West Michigan Aviation Academy in May of 2022 in the top ten of my class. My school was at 
-            the Grand Rapids airport! In highschool I was involved in leadership in Student Council, NHS, and yearbook.</p>
-        <div class="scroll-container">
-            <img src="images/plane.jpg" alt="Flying with the Student Council Executive Board" width="400" height="300">
-            <img src="images/yearbook.jpg" alt="Yearbook class." width="400" height="300">
-            <img src="images/graduation.jpg" alt="Graduation." width="400" height="300">
-            <img src="images/cessnaview.jpg" alt="View from a Cessna." width="400" height="300">
-            <img src="images/collegeday.jpg" alt="College day in highschool." width="400" height="300">
-        </div>
-    </section>
-    <section id="projectSpotlight">
-        <h2 class= "center-text">Project Spotlight</h2>
-        <h2> </h2>
-        <figure class="center-image">
-            <a href = "https://taylornlane.github.io/Vector-Calculator/"><img src="images/vectorCalculator.png" alt="Vector Calculator Project Link."width="300" height="300"></a>
-        </figure>
-        <p class = "center-text">I created a vector calculator to help me do various calculations for my Calculus III course, 
-            including, vector projections, dot products, cross products, and scalar multiples. This project was coded using JavaScript, HTML, and CSS. Click to check it out!</p>
-    </section>
-    <section id="reading" class = "center-text">
-        <h2>Reading</h2>
-        <p>I <strong>LOVE</strong> reading. When I was little, my siblings and I would max out the amount of books we could check out at the library each week. As I've gotten older I've slowed down a bit, but I still read quite a bit. My current goal is to read all of the books on NYT's 
-        <a href="https://www.nytimes.com/interactive/2024/books/best-books-21st-century.html">Top 100 books of the 21st Century</a>. So far I've read three, so there's a long way to go. Currently reading: Say Nothing by Patrick Radden Keefe.</p>
-    </section>
-    <section id="fashion" class = "center-text">
-        <h2>Fashion</h2>
-        <img src="/images/outfitsscreenshot.png"alt="Outifts I created using pieces from my wardrobe." width="400" height=" 300">
-        <p>If you know me in real life, you would definitely say one of the most unique things about me is my style. My favorite thing to do everyday is get dressed, so I'm always playing around with my outfits. 
-            In the past few years, I've been shopping more sustainably and attempting to fix my overconsumption of clothing. It's something I'm very passionate about, and I'll link a few videos below if you 
-            want to learn more about the current state of the fashion industry. What are some steps that I've taken to be more sustainable?</p>
-            Thrifting, outift planning through Whering, and outfit repeating!!
-            <h4>Videos to get you started:</h4>
-            <p><a href="https://youtu.be/uq4Vi8PyBFM?si=uoL0xC8I7zYOAkQi">Decreasing Clothing Quality</a></p>
-            <p><a href="https://youtu.be/DbqOEXomPvk?si=jKnrTTA5ikKApneN">Environmental Costs</a></p>
-            <p><a href="https://youtu.be/Td3ozw9B9F0?si=MldvZViTM-DCtAFp">Slow Fashion</a></p>
-            <h3>Follow me on:</h3>
-            <dt><a href="https://app.whering.co.uk/profile/taylorlane/outfits">Whering</a></dd></dt>
-            <dt> <a href="https://www.tiktok.com/@tayl0r.nic0le?_t=8pSbleesMZy&_r=1">TikTok</a></dt>
+      </div>
+
+      <div class="spivvy__body" data-animate>
+        <div class="spivvy__copy">
+          <p>
+            I founded Spivvy and built every part of it solo: design, mobile
+            app, backend, payments, marketing. It's a hyper-local,
+            .edu-verified marketplace for college students. Every listing is
+            from someone at your school, every transaction is in person, and
+            every user is verified by their .edu email before they can list or
+            buy. Launched in March 2026 at the University of Michigan, with
+            early traction at Grand Valley State.
+          </p>
+
+          <ul class="tech-tags" aria-label="Tech stack">
+            <li>React Native</li>
+            <li>TypeScript</li>
+            <li>Expo</li>
+            <li>Supabase</li>
+            <li>Postgres</li>
+            <li>Stripe Connect</li>
+            <li>Expo Push</li>
+            <li>Sentry</li>
+          </ul>
+
+          <div class="btn-group">
             
-        </section>
-        <section id="photography" class = "center-text">
-            <h2>Photography</h2>
-            <div class="gallery">
-                <img src="images/alicante.JPG" alt="View from the castle in Alicante, Spain">
-                <img src="images/beach.JPG" alt="Pretty view of a beach">
-                <img src ="images/budapest1.JPG" alt="The Parliment Building in Budapest.">
-                <img src="images/mirabell.JPG" alt="Mirabell Garden in Salzburg, Austria">
-                <img src="images/tenerifesunset.JPG" alt="View of the sunset above the clouds in Tenerife.">
-                <img src="images/vienna1.JPG" alt="A statue in Vienna">
-                <img src="images/blacksand.JPG" alt="Black sand beach">
-                <img src="images/carpets.JPG" alt="Carpets in Morocco">
-                <img src="images/cliff.JPG" alt="">
-                <img src="images/cliffs3.JPG" alt="">
-                <img src="images/desert.JPG" alt="">
-                <img src="images/malta.JPG" alt="">
-                <img src="images/malta2.JPG" alt="">
-                <img src="images/morocco.JPG" alt="">
-                <img src="images/morocco2.JPG" alt="">
-                <img src="images/mountain.JPG" alt="">
-                <img src="images/mountain3.JPG" alt="">
-                <img src="images/mountin2.JPG" alt="">
-                <img src="images/tenerfie2.JPG" alt="">
-                <img src="images/tenerife3.JPG" alt="">
-                <img src="images/venice.JPG" alt="">
-                <img src="images/toledo.JPG" alt ="">
-                <img src="images/original_279ec9e0-060f-47d5-94a4-c138294d3669_IMG_0190.JPG">
-                <img src="images/original_a6471979-3f66-4ebe-981c-aa2a9cbf599d_IMG_8153.JPG">
-                <img src="images/chinatown.JPG">
-                <img src="images/church.JPG">
-                <img src="images/church2.JPG">
-                <img src="images/london1.JPG">
-                <img src="images/lamppost.JPG">
-                <img src="images/sevilla.JPG">
-                <img src="images/sevilla2.JPG">
-                <img src="images/toledo2.JPG">
-                <img src="images/venice3.JPG">
-                <img src="images/venice4.JPG">
-                <img src="images/dinner.JPG">
-                <img src="images/original_ff02e379-c088-4691-a503-e8644b9c9eee_IMG_9348.JPG">
-            </div>
-        </section>
-    
-    <footer class="footer">
-        <p>&copy; 2024 Taylor Lane</p>
-    </footer>
-    <script src="script.js"></script>
+            <a href="https://apps.apple.com/us/app/spivvy/id6759763491" class="btn btn--primary" target="_blank" rel="noopener noreferrer">
+              <!-- apple icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+              App Store
+            </a>
+            
+            <a href="https://play.google.com/store/apps/details?id=com.taylorlane.spivvy" class="btn btn--primary" target="_blank" rel="noopener noreferrer">
+              <!-- play icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+              Google Play
+            </a>
+            <a href="https://spivvy.app" class="btn btn--secondary" target="_blank" rel="noopener noreferrer">spivvy.app</a>
+            <a href="https://github.com/taylornlane/spivvy-showcase" class="btn btn--ghost" target="_blank" rel="noopener noreferrer">Engineering →</a>
+          </div>
+        </div>
+
+        <div class="spivvy__screenshots">
+          <div class="phone-frame">
+            <img src="assets/spivvy-screenshots/01-home.png" alt="Spivvy home screen" loading="lazy" />
+          </div>
+          <div class="phone-frame">
+            <img src="assets/spivvy-screenshots/03-listings.png" alt="Spivvy listings screen" loading="lazy" />
+          </div>
+        </div>
+      </div>
+
+      <div class="spivvy__metrics" data-animate>
+        <div class="metric">
+          <span class="metric__value">230+</span>
+          <span class="metric__label">Users</span>
+        </div>
+        <div class="metric">
+          <span class="metric__value">200+</span>
+          <span class="metric__label">Listings</span>
+        </div>
+        <div class="metric">
+          <span class="metric__value">71.4%</span>
+          <span class="metric__label">App Store conversion</span>
+        </div>
+        <div class="metric">
+          <span class="metric__value">iOS &amp;<br>Android</span>
+          <span class="metric__label">Platforms</span>
+        </div>
+        <div class="metric">
+          <span class="metric__value">2</span>
+          <span class="metric__label">Campuses</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════ MY HEALTH SCHEDULE ═════════════════════════════ -->
+  <section id="health-schedule" class="project">
+    <div class="container">
+      <div class="project__inner" data-animate>
+
+        <div class="project__media">
+          <div class="phone-frame">
+            <img src="assets/med-app-screenshots/01-home.png" alt="My Health Schedule home screen" loading="lazy" />
+          </div>
+        </div>
+
+        <div class="project__content">
+          <span class="section-label">Project</span>
+          <h2 class="section-heading">My Health Schedule</h2>
+          <p class="project__tagline">
+            An AI-powered medication tracker that reads prescription labels with
+            Claude vision, checks drug interactions, and builds your weekly
+            schedule automatically.
+          </p>
+          <p class="project__body">
+            A capstone project I built using Claude's vision API to extract
+            structured medication data from photos of prescription bottles, then
+            cross-references that data against RxNorm, OpenFDA, and DrugBank for
+            drug interactions and discontinuation warnings. The schedule
+            auto-populates from frequency text like "twice daily," and a
+            five-week adherence history tracks dose-by-dose compliance.
+          </p>
+          <ul class="tech-tags" aria-label="Tech stack">
+            <li>React 19</li>
+            <li>Vite</li>
+            <li>Vercel Serverless</li>
+            <li>Anthropic Claude API</li>
+            <li>RxNorm</li>
+            <li>OpenFDA</li>
+            <li>DrugBank</li>
+          </ul>
+          <div class="btn-group">
+            <a href="https://my-med-app-tau.vercel.app" class="btn btn--primary" target="_blank" rel="noopener noreferrer">Live Demo</a>
+            <a href="https://github.com/taylornlane/my-med-app" class="btn btn--secondary" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════ UN POPULATION ANALYSIS ═════════════════════════ -->
+  <section id="un-analysis" class="project project--alt">
+    <div class="container">
+      <div class="project__inner project__inner--reversed" data-animate>
+
+        <div class="project__media">
+          <img
+            src="assets/un-data-median-age-chart.png"
+            alt="UN Population Analysis — median age chart"
+            class="project__chart"
+            loading="lazy"
+          />
+        </div>
+
+        <div class="project__content">
+          <span class="section-label">Academic Project</span>
+          <h2 class="section-heading">UN Population Analysis</h2>
+          <p class="project__tagline">
+            Data analysis and predictive modeling on UN World Population
+            Prospects data, in R.
+          </p>
+          <p class="project__body">
+            A group final project for DATASCI 306 at Michigan analyzing UN
+            demographic data across regions and countries. Eighteen-plus
+            visualizations exploring mortality, migration, fertility, and median
+            age across wealth tiers, plus a linear regression model predicting
+            mean childbearing age compared against the UN's official forecasts.
+            My contributions focused on the median age, net migration, and teen
+            pregnancy analyses, and the ML model.
+          </p>
+          <ul class="tech-tags" aria-label="Tech stack">
+            <li>R</li>
+            <li>ggplot2</li>
+            <li>tidyverse</li>
+            <li>caret</li>
+          </ul>
+          <div class="btn-group">
+            <!-- TODO: confirm the correct branch/path for finals.pdf in your repo -->
+            <a href="https://github.com/taylornlane/un-population-analysis/blob/main/assets/finals.pdf" class="btn btn--primary" target="_blank" rel="noopener noreferrer">Full Report (PDF)</a>
+            <a href="https://github.com/taylornlane/un-population-analysis" class="btn btn--secondary" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════ ABOUT ══════════════════════════════════ -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="about__inner" data-animate>
+        <span class="section-label">About</span>
+        <h2 class="section-heading">Background</h2>
+        <div class="about__body">
+          <p>
+            I graduated from the University of Michigan in May 2026 with a major in 
+            Computer Science. I've shopped secondhand since high school and wanted 
+            to be a Depop seller for a while before the shipping logistics killed 
+            it, which is part of why I ended up building Spivvy.
+          </p>
+          <p>
+            Right now I'm looking for engineering roles where I can grow alongside 
+            more experienced people and work on products in the resale, sustainability, 
+            or social-good space.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════ WHAT I CARE ABOUT ═══════════════════════════════ -->
+  <section id="interests" class="interests">
+    <div class="container">
+
+      <div class="interests__header" data-animate>
+        <span class="section-label">Beyond work</span>
+        <h2 class="section-heading">What I care about</h2>
+      </div>
+
+      <div class="interests__grid">
+
+        <div class="interest-card" data-animate>
+          <h3 class="interest-card__heading">Sustainable Fashion</h3>
+          <p class="interest-card__body">
+            Most of my friends would tell you my style is the most distinctive thing 
+            about me, and I take that seriously. I have an outfit TikTok, I shop almost 
+            entirely secondhand or from local artists, and I watch way too many 
+            documentaries about the fashion industry. Spivvy is natural progression of 
+            this interest. Once I got to college, I knew I needed to find a way to keep 
+            more of campus's clothes in circulation instead of in dumpsters.
+          </p>
+        </div>
+
+        <div class="interest-card" data-animate>
+          <h3 class="interest-card__heading">Photography</h3>
+          <p class="interest-card__body">
+            I took most of my favorite shots while studying abroad: everything from camels 
+            in the Moroccan sand dunes to sailboats along the coast of Portugal. All done 
+            on my parent's old digital camera, which I carried with me everywhere. I'm currently
+            contemplating getting a nicer camera as I prepare for my next big trip.
+          </p>
+          <div class="interest-card__images">
+            <img src="images/morocco.JPG" alt="Morocco" loading="lazy" />
+            <img src="images/cliff.JPG"   alt="Coastal cliffs" loading="lazy" />
+          </div>
+        </div>
+
+        <div class="interest-card" data-animate>
+          <h3 class="interest-card__heading">Reading</h3>
+          <p class="interest-card__body">
+            I read constantly. My current project is reading every book on the
+            NYT's Top 100 Books of the 21st Century list. Three down, 97 to
+            go! Right now: <em>Say Nothing</em> by Patrick Radden Keefe.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════ FOOTER ══════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__meta">
+          <span class="footer__copy">© 2026 Taylor Lane</span>
+          <span class="footer__built">Built with HTML, TypeScript, and SCSS</span>
+        </div>
+        <nav class="footer__links" aria-label="Footer links">
+          <a href="mailto:taynlane@gmail.com">Email</a>
+          <a href="https://www.linkedin.com/in/taynlane" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://github.com/taylornlane" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="main.js"></script>
 </body>
 </html>

@@ -1,0 +1,58 @@
+@use 'variables' as *;
+
+.footer {
+  background-color: $color-footer-bg;
+  padding: $space-xl 0;
+
+  @media (max-width: $bp-md) {
+    padding: $space-lg 0;
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: $space-lg;
+
+    @media (max-width: $bp-md) {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: $space-md;
+    }
+  }
+
+  &__meta {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  &__copy {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: $color-white;
+  }
+
+  &__built {
+    font-size: 0.75rem;
+    color: $color-footer-text;
+    letter-spacing: 0.01em;
+  }
+
+  &__links {
+    display: flex;
+    gap: $space-md;
+
+    a {
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: $color-footer-text;
+      text-decoration: none;
+      transition: color 0.18s;
+
+      &:hover {
+        color: $color-white;
+      }
+    }
+  }
+}

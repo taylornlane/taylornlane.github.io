@@ -1,0 +1,78 @@
+@use 'variables' as *;
+
+.project {
+  padding: $space-section 0;
+  background-color: $color-bg;
+
+  @media (max-width: $bp-md) {
+    padding: 72px 0;
+  }
+
+  // Alternate surface bg for visual rhythm
+  &--alt {
+    background-color: $color-surface;
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: $space-2xl;
+    align-items: center;
+
+    &--reversed {
+      .project__media { order: 2; }
+      .project__content { order: 1; }
+    }
+
+    @media (max-width: $bp-md) {
+      grid-template-columns: 1fr;
+      gap: $space-xl;
+
+      &--reversed {
+        .project__media { order: 1; }
+        .project__content { order: 2; }
+      }
+    }
+  }
+
+  &__media {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    .phone-frame {
+      width: 220px;
+
+      @media (max-width: $bp-md) {
+        width: 180px;
+      }
+    }
+  }
+
+  &__chart {
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid $color-border;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.07);
+  }
+
+  &__content {
+    .section-heading {
+      margin-top: $space-xs;
+    }
+  }
+
+  &__tagline {
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: $color-text-secondary;
+    margin-bottom: $space-md;
+  }
+
+  &__body {
+    font-size: 0.9375rem;
+    line-height: 1.75;
+    color: $color-text;
+    margin-bottom: $space-lg;
+  }
+}

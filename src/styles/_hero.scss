@@ -1,0 +1,105 @@
+@use 'variables' as *;
+
+.hero {
+  padding: 88px 0 100px;
+  background-color: $color-bg;
+
+  @media (max-width: $bp-md) {
+    padding: 60px 0 72px;
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: 1fr 340px;
+    gap: $space-2xl;
+    align-items: center;
+
+    @media (max-width: $bp-md) {
+      grid-template-columns: 1fr;
+      gap: $space-xl;
+    }
+  }
+
+  &__content {
+    @media (max-width: $bp-md) {
+      order: 2;
+    }
+  }
+
+  &__name {
+    font-family: $font-heading;
+    font-size: clamp(3.25rem, 8vw, 5.25rem);
+    font-weight: 300;
+    line-height: 1.0;
+    letter-spacing: -0.03em;
+    color: $color-text;
+    margin-bottom: $space-md;
+  }
+
+  &__pitch {
+    font-size: clamp(1rem, 2vw, 1.125rem);
+    line-height: 1.65;
+    color: $color-text-secondary;
+    max-width: 540px;
+    margin-bottom: $space-xl;
+  }
+
+  &__links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $space-xs;
+  }
+
+  &__link {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 9px 16px;
+    border: 1px solid $color-border;
+    border-radius: 100px;
+    font-size: 0.8125rem;
+    font-weight: 500;
+    color: $color-text;
+    text-decoration: none;
+    transition: border-color 0.18s, background-color 0.18s, color 0.18s;
+
+    svg {
+      flex-shrink: 0;
+      opacity: 0.6;
+      transition: opacity 0.18s;
+    }
+
+    &:hover {
+      border-color: $color-accent;
+      color: $color-accent;
+      background-color: rgba($color-accent, 0.04);
+
+      svg {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__photo-wrap {
+    display: flex;
+    justify-content: center;
+
+    @media (max-width: $bp-md) {
+      order: 1;
+    }
+  }
+
+  &__photo {
+    width: 100%;
+    max-width: 320px;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+
+    @media (max-width: $bp-md) {
+      max-width: 200px;
+      aspect-ratio: 1 / 1;
+    }
+  }
+}

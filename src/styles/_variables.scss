@@ -1,0 +1,32 @@
+// ─── Typography ───────────────────────────────────────────────────────────────
+$font-heading: 'Fraunces', Georgia, serif;
+$font-body:    'Inter', system-ui, -apple-system, sans-serif;
+
+// ─── Color ────────────────────────────────────────────────────────────────────
+$color-bg:             #fafaf8;
+$color-surface:        #f2f1ed;
+$color-text:           #111110;
+$color-text-secondary: #6b6960;
+$color-accent:         #1d3557;
+$color-accent-hover:   #142840;
+$color-border:         #e4e3de;
+$color-white:          #ffffff;
+$color-footer-bg:      #0e0e0d;
+$color-footer-text:    #c8c7c2;
+
+// ─── Spacing ──────────────────────────────────────────────────────────────────
+$space-xs:      8px;
+$space-sm:      16px;
+$space-md:      24px;
+$space-lg:      40px;
+$space-xl:      64px;
+$space-2xl:     96px;
+$space-section: 120px;
+
+// ─── Layout ───────────────────────────────────────────────────────────────────
+$max-width:       1100px;
+$bp-md:           768px;
+$bp-sm:           480px;
+
+// ─── Transitions ──────────────────────────────────────────────────────────────
+$ease-out: cubic-bezier(0.16, 1, 0.3, 1);

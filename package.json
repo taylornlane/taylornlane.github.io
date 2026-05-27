@@ -1,0 +1,16 @@
+{
+  "name": "taylornlane-github-io",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build:css": "sass src/styles/main.scss styles.css --no-source-map --style=compressed",
+    "build:ts": "tsc",
+    "build": "npm run build:css && npm run build:ts",
+    "watch:css": "sass src/styles/main.scss styles.css --watch --no-source-map",
+    "watch:ts": "tsc --watch"
+  },
+  "devDependencies": {
+    "sass": "^1.77.0",
+    "typescript": "^5.4.0"
+  }
+}
